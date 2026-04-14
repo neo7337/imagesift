@@ -1,0 +1,21 @@
+[tools]
+python = "3.12"
+
+[env]
+_.python.venv = { path = ".venv", create = true }
+
+[tasks.install]
+description = "Install Python dependencies into the venv"
+run = "pip install -r requirements.txt"
+
+[tasks.index]
+description = "Build or incrementally update the image embedding cache"
+run = "python index_images.py"
+
+[tasks.search]
+description = "Search indexed images by natural language description"
+run = "python search_images.py"
+
+[tasks.reindex]
+description = "Force re-embed all images, ignoring cache"
+run = "python index_images.py --force"

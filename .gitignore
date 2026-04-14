@@ -1,0 +1,33 @@
+# Virtual environment
+.venv/
+
+# Embedding cache
+embeddings.db
+
+# Search results
+results.json
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
